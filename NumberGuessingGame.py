@@ -1,19 +1,16 @@
-Python 3.9.2 (tags/v3.9.2:1a79785, Feb 19 2021, 13:44:55) [MSC v.1928 64 bit (AMD64)] on win32
-Type "help", "copyright", "credits" or "license()" for more information.
->>> 
-============================================================================================================== RESTART: Shell ==============================================================================================================
->>> import random
-TitleString='Number guessing game:5'
+import random
+TitleString='Number guessing game:'
 print(TitleString)
 
 chances=0
+number=random.randint(1,9)
+
 while chances<5:
 
 
     InputNumber=int(input('Enter your number(from 1 to 9)'))
     print(InputNumber)
 
-    number=random.randint(1,9)
 
     if(InputNumber==number):
         print('YOU ARE CORRECT AND HAVE WON THE GAME')
